@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +11,33 @@
 </head>
 
 <body>
-    <h1 class="heading" >Timer Web APPLICATION</h1>
+    <h1 class="heading">Timer Web APPLICATION</h1>
 
-    <input class="input" type="number" placeholder="Seconds">
+    <input class="input" type="number" placeholder="Seconds" id="input-field">
 
     <div class="main-container">
         <div class="count-container">
-            <div class="count">14</div>
+            <div class="count" id="hours">14</div>
             <p class="count-text">Hours</p>
         </div>
 
         <div class="count-container">
-            <div class="count">45</div>
+            <div class="count" id="minutes">45</div>
             <p class="count-text">Minutes</p>
         </div>
 
         <div class="count-container">
-            <div class="count">34</div>
+            <div class="count" id="seconds">34</div>
             <p class="count-text">Seconds</p>
         </div>
     </div>
 
     <div class="button-container">
-        <button class="button" type="button">Start Timer</button>
-        <button class="button" type="button">Reset Timer</button>
+        <button class="button" type="button" id="start-btn" onclick="startTimer()">Start Timer</button>
+        <button class="button" type="button" onclick="reset()">Reset Timer</button>
     </div>
     <p class="club">&lt;/&gt; WITH &#9829; BY WEB DEV IIITT</p>
 </body>
+<script src="./index.js"></script>
+
 </html>
